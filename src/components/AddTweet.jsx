@@ -1,11 +1,12 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
+import "../CSS/AddTweet.css";
 
 function AddTweet({ onAddTweet }) {
   const [text, setText] = useState("");
 
   return (
-    <div>
+    <div className="add-tweet">
       <input
         placeholder="Add Tweet"
         value={text}

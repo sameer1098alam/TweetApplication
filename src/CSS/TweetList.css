@@ -1,9 +1,26 @@
-.tweet-list{
-    
-    list-style:none;
 
-}
-.tweet-like-wrapper{
+
+
+/* TweetList.css */
+
+/* General list styling */
+.tweet-list {
+    list-style: none;
+    padding: 0;
+    margin: 100px auto; /* Centers the tweet list horizontally */
+    max-width: 600px; /* Restricts the width of the tweet list */
+    width: 100%; /* Ensures it takes up the full width up to the max-width */
+  }
+  
+  
+  .tweet-like-wrapper {
+    display: flex;
+
     
-    margin-bottom:1rem;
-}
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    
+    transition: background-color 0.3s ease;
+  }
+  

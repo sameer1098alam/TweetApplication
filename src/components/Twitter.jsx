@@ -1,4 +1,5 @@
 import { memo, useCallback, useState } from "react";
+
 import AddTweet from "./AddTweet";
 import TweetList from "./TweetList";
 
@@ -54,9 +55,18 @@ function Twitter() {
 
   return (
     <>
-      <MemoisedTweet onAddTweet={handleAddTweet} />
-      <button onClick={sortTweets}>Sort Tweets by Most Recent</button>
-      <TweetList tweets={tweets} onEditTweet={handleEditTweet} />
+      {/* Fixed header for AddTweet and Sort button */}
+      <div className="fixed-header">
+        <MemoisedTweet onAddTweet={handleAddTweet} />
+        <button className="sort-tweets-button" onClick={sortTweets}>
+          Sort Tweets by Most Recent
+        </button>
+      </div>
+
+      {/* Main content area, padded to avoid overlapping the fixed header */}
+      <div className="body-padding">
+        <TweetList tweets={tweets} onEditTweet={handleEditTweet} />
+      </div>
     </>
   );
 }

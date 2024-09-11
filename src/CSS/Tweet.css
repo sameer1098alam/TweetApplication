@@ -1,33 +1,76 @@
-.tweet-wrapper{
-    border:1px solid black;
-    padding:1rem;
-    width:600px;
-    font-size:large;
-}
-.likes{
-    font-size:xx-small;
-    
-    
-}
-.tweet-content{
-    margin-bottom:1rem;
-
-
-}
-.tweet-createdAt-wrapper{
-    display:flex;
-    justify-content:space-between;
-    margin-top:1rem;
-
-
-}
-.likes,.created-at{
-    font-size:small;
-
-}
-
-.tweet-edit-wrapper{
-    display:flex;
-    justify-content:space-between;
-    margin-top:1rem;
-}
+/* Wrapper for each tweet */
+.tweet-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(240, 243, 240, 0.1);
+    word-wrap: break-word; /* Ensures long text breaks properly */
+  }
+  
+  /* Content and edit button section */
+  .tweet-edit-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for tweet content */
+  .tweet-content {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    flex-grow: 1;
+  }
+  
+  /* Button styling */
+  .tweet-edit-wrapper button {
+    background-color: #1da1f2;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .tweet-edit-wrapper button:hover {
+    background-color: #0a84d1;
+  }
+  
+  /* Likes and creation date section */
+  .like-createdAt-wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #9a1a1a;
+  }
+  
+  /* Like counter styling */
+  .likes {
+    font-weight: 500;
+    color: #e80c0c;
+  }
+  
+  /* Creation date styling */
+  .created-at {
+    font-style: italic;
+    color: #7e7777;
+  }
+  
+  /* Input styling for editing tweet content */
+  .tweet-edit-wrapper input {
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    margin-right: 10px;
+  }
+  
