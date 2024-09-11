@@ -4,7 +4,14 @@ import AddTweet from "./AddTweet";
 import TweetList from "./TweetList";
 
 const initialDummyTweets = [
-  { id: 1, content: "Hello World", likecontent: 100, created: new Date() },
+  { id: 1, content: "Tweet Application
+Developed a dynamic tweet application with core features including writing, posting, and editing tweets. Users can:
+
+Write and post new tweets with real-time content updates.
+View the timestamp of each tweet.
+Sort tweets by the most recent time.
+Edit existing tweets and save changes dynamically.
+This project demonstrates skills in state management, React hooks, and user interface design.", likecontent: 100, created: new Date() },
   { id: 2, content: "Hello World2", likecontent: 200, created: new Date() },
   { id: 3, content: "Hello World3", likecontent: 300, created: new Date() },
   { id: 4, content: "Hello World4", likecontent: 400, created: new Date() },
